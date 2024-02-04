@@ -46,6 +46,7 @@ namespace SRegister {
 		try {
 			BinaryReader^ reader = gcnew BinaryReader(stream);
 			BinaryWriter^ writer = gcnew BinaryWriter(stream);
+
 			while (true) {
 				if (stream->DataAvailable) {
 					String^ msg = reader->ReadString(); StampCommand(msg);
@@ -58,13 +59,9 @@ namespace SRegister {
 					else {
 						DataTable^ table = DatabaseQuery(msg);
 
-//						String^ title = String::Format("Count = {0}", table->Rows->Count);
-//						MessageBox::Show(msg, title);
 						array<Byte>^ serializedTableData = Serializer(table);
 						writer->Write(serializedTableData->Length.ToString()); 
 						writer->Write(serializedTableData);
-						//int ix = serializedTableData->Length;
-						//MessageBox::Show(ix.ToString(), "test");
 					}
 				}
 			}
