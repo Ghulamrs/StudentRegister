@@ -3,6 +3,8 @@
 namespace SRegister {
 
 	using namespace System;
+	using namespace System::IO;
+	using namespace System::Text;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Collections::Generic;
@@ -170,7 +172,7 @@ namespace SRegister {
 			this->label1->Location = System::Drawing::Point(183, 15);
 			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(45, 30);
+			this->label1->Size = System::Drawing::Size(85, 58);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"مثالیں";
 			// 
@@ -194,12 +196,9 @@ namespace SRegister {
 			this->ComboBoxField->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
 			this->ComboBoxField->FormattingEnabled = true;
-			this->ComboBoxField->Items->AddRange(gcnew cli::array< System::Object^  >(15) {L"سلسلہ نمبر", L"نام طالب علم", L"والد کا نام", 
-				L"تاریخ داخلہ", L"تاریخ پیدائش", L"تاریخ خارجہ", L"ذات/برادری", L"پیشہ", L"گا‍‌ؤں", L"جماعت داخلہ", L"جماعت خارجہ", L"پاس", L"سیشن", 
-				L"دوبارہ داخلہ", L"سارا داخلہ"});
 			this->ComboBoxField->Location = System::Drawing::Point(52, 11);
 			this->ComboBoxField->Name = L"ComboBoxField";
-			this->ComboBoxField->Size = System::Drawing::Size(115, 38);
+			this->ComboBoxField->Size = System::Drawing::Size(115, 66);
 			this->ComboBoxField->TabIndex = 4;
 			this->ComboBoxField->DrawItem += gcnew System::Windows::Forms::DrawItemEventHandler(this, &AddItem::ComboBoxField_DrawItem);
 			this->ComboBoxField->SelectedIndexChanged += gcnew System::EventHandler(this, &AddItem::ComboBoxField_SelectedIndexChanged);
@@ -208,12 +207,12 @@ namespace SRegister {
 			// 
 			this->dataViewer->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataViewer->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->dataViewer->Location = System::Drawing::Point(3, 32);
+			this->dataViewer->Location = System::Drawing::Point(3, 61);
 			this->dataViewer->MultiSelect = false;
 			this->dataViewer->Name = L"dataViewer";
 			this->dataViewer->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->dataViewer->RowTemplate->Height = 33;
-			this->dataViewer->Size = System::Drawing::Size(838, 396);
+			this->dataViewer->Size = System::Drawing::Size(838, 367);
 			this->dataViewer->TabIndex = 5;
 			this->dataViewer->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &AddItem::dataViewer_CellContentClick);
 			this->dataViewer->CellMouseLeave += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &AddItem::dataViewer_CellMouseLeave);
@@ -226,7 +225,7 @@ namespace SRegister {
 			this->label2->Location = System::Drawing::Point(17, 15);
 			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(30, 30);
+			this->label2->Size = System::Drawing::Size(59, 58);
 			this->label2->TabIndex = 6;
 			this->label2->Text = L"کلیہ";
 			// 
@@ -257,7 +256,7 @@ namespace SRegister {
 			legend1->IsTextAutoFit = false;
 			legend1->Name = L"Legend1";
 			this->chart1->Legends->Add(legend1);
-			this->chart1->Location = System::Drawing::Point(3, 32);
+			this->chart1->Location = System::Drawing::Point(3, 61);
 			this->chart1->Name = L"chart1";
 			series1->ChartArea = L"ChartArea1";
 			series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Pie;
@@ -275,7 +274,7 @@ namespace SRegister {
 			series2->Name = L"Series2";
 			this->chart1->Series->Add(series1);
 			this->chart1->Series->Add(series2);
-			this->chart1->Size = System::Drawing::Size(838, 396);
+			this->chart1->Size = System::Drawing::Size(838, 367);
 			this->chart1->TabIndex = 63;
 			this->chart1->Text = L"chart1";
 			title1->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
@@ -299,7 +298,7 @@ namespace SRegister {
 			this->dateTimePicker->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
 			this->dateTimePicker->Location = System::Drawing::Point(255, 188);
 			this->dateTimePicker->Name = L"dateTimePicker";
-			this->dateTimePicker->Size = System::Drawing::Size(200, 37);
+			this->dateTimePicker->Size = System::Drawing::Size(200, 67);
 			this->dateTimePicker->TabIndex = 62;
 			this->dateTimePicker->Visible = false;
 			// 
@@ -320,12 +319,13 @@ namespace SRegister {
 			// comboBoxWord
 			// 
 			this->comboBoxWord->DrawMode = System::Windows::Forms::DrawMode::OwnerDrawVariable;
+			this->comboBoxWord->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboBoxWord->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
 			this->comboBoxWord->FormattingEnabled = true;
 			this->comboBoxWord->Location = System::Drawing::Point(244, 11);
 			this->comboBoxWord->Name = L"comboBoxWord";
-			this->comboBoxWord->Size = System::Drawing::Size(222, 38);
+			this->comboBoxWord->Size = System::Drawing::Size(222, 66);
 			this->comboBoxWord->TabIndex = 58;
 			this->comboBoxWord->DrawItem += gcnew System::Windows::Forms::DrawItemEventHandler(this, &AddItem::ComboBoxField_DrawItem);
 			this->comboBoxWord->SelectedIndexChanged += gcnew System::EventHandler(this, &AddItem::comboBoxWord_SelectedIndexChanged);
@@ -338,7 +338,7 @@ namespace SRegister {
 			this->textBox->Margin = System::Windows::Forms::Padding(2);
 			this->textBox->Name = L"textBox";
 			this->textBox->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->textBox->Size = System::Drawing::Size(210, 37);
+			this->textBox->Size = System::Drawing::Size(210, 67);
 			this->textBox->TabIndex = 59;
 			this->textBox->Enter += gcnew System::EventHandler(this, &AddItem::textBox_Enter);
 			this->textBox->Leave += gcnew System::EventHandler(this, &AddItem::textBox_Leave);
@@ -351,7 +351,7 @@ namespace SRegister {
 			this->label4->Location = System::Drawing::Point(487, 15);
 			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(28, 30);
+			this->label4->Size = System::Drawing::Size(55, 58);
 			this->label4->TabIndex = 60;
 			this->label4->Text = L"لفظ";
 			// 
@@ -377,7 +377,7 @@ namespace SRegister {
 			this->dateTimePickerInCombo->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
 			this->dateTimePickerInCombo->Location = System::Drawing::Point(277, 509);
 			this->dateTimePickerInCombo->Name = L"dateTimePickerInCombo";
-			this->dateTimePickerInCombo->Size = System::Drawing::Size(200, 36);
+			this->dateTimePickerInCombo->Size = System::Drawing::Size(200, 65);
 			this->dateTimePickerInCombo->TabIndex = 62;
 			this->dateTimePickerInCombo->Visible = false;
 			this->dateTimePickerInCombo->MouseEnter += gcnew System::EventHandler(this, &AddItem::dateTimePickerInCombo_MouseEnter);
@@ -391,7 +391,7 @@ namespace SRegister {
 				static_cast<System::Byte>(0)));
 			this->userFile->Location = System::Drawing::Point(776, 17);
 			this->userFile->Name = L"userFile";
-			this->userFile->Size = System::Drawing::Size(0, 25);
+			this->userFile->Size = System::Drawing::Size(0, 50);
 			this->userFile->TabIndex = 63;
 			// 
 			// Breakup
@@ -410,7 +410,7 @@ namespace SRegister {
 			// 
 			// AddItem
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(7, 28);
+			this->AutoScaleDimensions = System::Drawing::SizeF(15, 58);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(868, 563);
 			this->Controls->Add(this->Breakup);
@@ -459,9 +459,8 @@ public:
 public:
 	int row, column;
 	DataTable^ m_table;
-	array<int>^ sessions;
-	array<ArrayList^>^ lists;
-	AddItem(array<System::EventHandler^>^ evh, array<ArrayList^>^ _lists, array<int>^ _sessions) {
+	array<ArrayList^>^ m_lists;
+	AddItem(array<System::EventHandler^>^ evh, array<ArrayList^>^ _lists) {
 		InitializeComponent();
 
 		// defined in MainForm.h file
@@ -477,38 +476,24 @@ public:
 		this->CenterToScreen();
 		this->BringToFront();
 
-		sessions = _sessions;
-		lists = _lists; // 0. not used, 1-2. Name, Father, 3-5. not used, 6-8. occu,cas,vil, 9. dup names 
+		m_lists = _lists;
+		ComboBoxField->Items->AddRange(m_lists[10]->ToArray()); 
+		ComboBoxField->Items->RemoveAt(3);
+		ComboBoxField->Items->Insert(3, L"سال");
+		ComboBoxField->Items->AddRange(gcnew array<String^>{L"کیفیت", L"سارا داخلہ"});
 		ComboBoxField->SelectedIndex = 0;
-
 	}
+
 private: System::Void ComboBoxField_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 		textBox->Enabled = true;
 		Breakup->Enabled = false;
 		comboBoxWord->Enabled = true;
-		if(2 < ComboBoxField->SelectedIndex && ComboBoxField->SelectedIndex <= 5)  {
-			ShowDateHere(); 
-			this->textBox->Clear();
-			this->textBox->Enabled = false;
-			this->Find->Enabled = true;
-			Breakup->Enabled = true;
-			return ;
-		}
-		else {
-			if((5 < ComboBoxField->SelectedIndex && ComboBoxField->SelectedIndex < 9) || (10 < ComboBoxField->SelectedIndex && ComboBoxField->SelectedIndex < 13)) Breakup->Enabled = true;
-			if(dateTimePickerInCombo->Visible) dateTimePickerInCombo->Visible = false;
-			comboBoxWord->DataSource = lists[ComboBoxField->SelectedIndex];
-			comboBoxWord->SelectedIndex = 0;
-		}
+
+		if(ComboBoxField->SelectedIndex==3) comboBoxWord->DataSource = m_lists[ComboBoxField->SelectedIndex+8];
+		else comboBoxWord->DataSource = m_lists[ComboBoxField->SelectedIndex];
+		comboBoxWord->SelectedIndex = 0;
 
 		this->Find->Enabled = true;
-	}
-public:
-	void ShowDateHere(void) {
-		dateTimePickerInCombo->Location = this->comboBoxWord->Location;
-		dateTimePickerInCombo->Size     = this->comboBoxWord->Size;
-		dateTimePickerInCombo->Visible  = true;
-		ChangeCulture(L"en-US");
 	}
 private: System::Void comboBoxWord_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 		textBox->Text = comboBoxWord->SelectedItem->ToString();
@@ -540,34 +525,39 @@ private: System::Void textBox_Leave(System::Object^  sender, System::EventArgs^ 
 		ChangeCulture(L"ur-PK");
 	}
 private: System::Void PrintPlease_Click(System::Object^  sender, System::EventArgs^  e) {
-		if(m_table->Rows->Count > 0) {
-			Form1View^ dlg = gcnew Form1View();
-			dlg->sData->Clear();
-			for(int i=0; i<m_table->Rows->Count; i++) {
-				if( dataViewer->SelectedRows->Count == 1 && dataViewer->SelectedRows[0]->Index != i) continue;
-				dlg->sData->Add(gcnew StudentData(
-					Convert::ToInt32(   m_table->Rows[i]["RNO"]),
-										m_table->Rows[i]["StudentName"]->ToString(),
-										m_table->Rows[i]["FathersName"]->ToString(),
-										m_table->Rows[i]["Caste"]      ->ToString(),
-										m_table->Rows[i]["Occupation"] ->ToString(),
-										m_table->Rows[i]["Address"]    ->ToString(),
-					Convert::ToDateTime(m_table->Rows[i]["DOA"]),
-					Convert::ToDateTime(m_table->Rows[i]["DOB"]),
-					Convert::ToDateTime(m_table->Rows[i]["DOE"]),
-					Convert::ToInt32(   m_table->Rows[i]["InClass"]),
-					Convert::ToInt32(   m_table->Rows[i]["ExClass"]),
-					Convert::ToInt32(   m_table->Rows[i]["Session"]),
-					Convert::ToBoolean( m_table->Rows[i]["Passed"])));
+		try {
+			if(m_table->Rows->Count > 0) {
+				Form1View^ dlg = gcnew Form1View();
+				dlg->sData->Clear();
+				for(int i=0; i<m_table->Rows->Count; i++) {
+					if( dataViewer->SelectedRows->Count == 1 && dataViewer->SelectedRows[0]->Index != i) continue;
+					dlg->sData->Add(gcnew StudentData(
+						Convert::ToInt32(   m_table->Rows[i][L"نمبر"]),
+											m_table->Rows[i][L"نام"]->ToString(),
+											m_table->Rows[i][L"ولد"]->ToString(),
+											m_table->Rows[i][L"ذات"]->ToString(),
+											m_table->Rows[i][L"پیشہ"]->ToString(),
+											m_table->Rows[i][L"پتہ"]->ToString(),
+						Convert::ToDateTime(m_table->Rows[i][L"تاریخ"]),
+						Convert::ToDateTime(m_table->Rows[i][L"پیدائش"]),
+						Convert::ToDateTime(m_table->Rows[i][L"تاتاریخ"]),
+						Convert::ToInt32(   m_table->Rows[i][L"جماعت"]),
+						Convert::ToInt32(   m_table->Rows[i][L"تاجماعت"]),
+						Convert::ToInt32(   m_table->Rows[i][L"سال"]),
+						Convert::ToInt32(   m_table->Rows[i][L"کیفیت"])));
+				}
+				dlg->printOption = this->dataViewer->SelectedRows->Count == 1 ? 1 : 0;
+				dlg->printColor = this->printColor;
+				dlg->ShowDialog();
 			}
-			dlg->printOption = this->dataViewer->SelectedRows->Count == 1 ? 1 : 0;
-			dlg->printColor = this->printColor;
-			dlg->ShowDialog();
+		}
+		catch(Exception^ e) {
+			MessageBox::Show(e->Message, "Error");
 		}
 	}
 private: System::Void dataViewer_CellContentClick(System::Object^  sender, System::Windows::Forms::DataGridViewCellEventArgs^  e) {
 		if(e->RowIndex >= this->dataViewer->RowCount) return ;
-		if(e->ColumnIndex > 2 && e->ColumnIndex <= 5) {
+		if(e->ColumnIndex == 3 || e->ColumnIndex == 9 || e->ColumnIndex == 11) {
 			String^ str = this->dataViewer[e->ColumnIndex, e->RowIndex]->EditedFormattedValue->ToString();
 			dateTimePicker->Value = Convert::ToDateTime(str);
 			Rectangle^ rect = this->dataViewer->GetCellDisplayRectangle(e->ColumnIndex, e->RowIndex+1, true); rect->Inflate(5,5);
@@ -577,8 +567,8 @@ private: System::Void dataViewer_CellContentClick(System::Object^  sender, Syste
 			ChangeCulture(L"en-US");
 			row = e->RowIndex;
 		}
-		else if(e->ColumnIndex > 8) {
-			ChangeCulture(L"en-US");
+		else if(e->ColumnIndex < 7) {
+//			ChangeCulture(L"ur-PK");
 		}
 		column = e->ColumnIndex;
 	}
@@ -588,8 +578,8 @@ private: System::Void dataViewer_CellMouseLeave(System::Object^  sender, System:
 			dataViewer[column,row]->Value = dateTimePicker->Value;
 			dateTimePicker->Visible = false;
 		}
-		else if(column > 8) {
-			ChangeCulture(L"ur-PK");
+		else if(column < 7) {
+//			ChangeCulture(L"en-US");
 		}
 	}
 private: System::Void dateTimePickerInCombo_MouseLeave(System::Object^  sender, System::EventArgs^  e) {
@@ -612,48 +602,48 @@ private: System::Void ComboBoxField_DrawItem(System::Object^  sender, System::Wi
 		e->DrawFocusRectangle();
 	}
 private: System::Void chart1_MouseDown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-		HitTestResult^ result = chart1->HitTest(e->X, e->Y);
-		try {
-			bool exploded = (chart1->Series[0]->Points[result->PointIndex]->CustomProperties == "Exploded=true") ? true : false;
+		//HitTestResult^ result = chart1->HitTest(e->X, e->Y);
+		//try {
+		//	bool exploded = (chart1->Series[0]->Points[result->PointIndex]->CustomProperties == "Exploded=true") ? true : false;
 
-			for each(DataPoint^ point in chart1->Series[0]->Points) {
-				point->CustomProperties = "";
-			}
+		//	for each(DataPoint^ point in chart1->Series[0]->Points) {
+		//		point->CustomProperties = "";
+		//	}
 
-			if(exploded) return;
-			if( result->ChartElementType == ChartElementType::DataPoint) {
-				DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
-				point->CustomProperties = "Exploded = true";
-			}
+		//	if(exploded) return;
+		//	if( result->ChartElementType == ChartElementType::DataPoint) {
+		//		DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
+		//		point->CustomProperties = "Exploded = true";
+		//	}
 
-			if( result->ChartElementType == ChartElementType::LegendItem) {
-				DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
-				point->CustomProperties = "Exploded = true";
-			}
-		}
-		catch(Exception^ ) {
-		}
+		//	if( result->ChartElementType == ChartElementType::LegendItem) {
+		//		DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
+		//		point->CustomProperties = "Exploded = true";
+		//	}
+		//}
+		//catch(Exception^ ) {
+		//}
 	}
 private: System::Void chart1_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-		HitTestResult^ result = chart1->HitTest(e->X, e->Y);
-		try {
-			for each(DataPoint^ point in chart1->Series[0]->Points) {
-				point->BackSecondaryColor = Color::Black;
-				point->BackHatchStyle = ChartHatchStyle::None;
-				point->BorderWidth = 1;
-			}
-    
-			if( result->ChartElementType == ChartElementType::DataPoint ||
-				result->ChartElementType == ChartElementType::LegendItem) {                
+		//HitTestResult^ result = chart1->HitTest(e->X, e->Y);
+		//try {
+		//	for each(DataPoint^ point in chart1->Series[0]->Points) {
+		//		point->BackSecondaryColor = Color::Black;
+		//		point->BackHatchStyle = ChartHatchStyle::None;
+		//		point->BorderWidth = 1;
+		//	}
+  //  
+		//	if( result->ChartElementType == ChartElementType::DataPoint ||
+		//		result->ChartElementType == ChartElementType::LegendItem) {                
 
-				DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
-				point->BackSecondaryColor = Color::White;
-				point->BackHatchStyle = ChartHatchStyle::Percent25;
-				point->BorderWidth = 2;
-			}
-		}
-		catch(Exception^ ) {
-		}
+		//		DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
+		//		point->BackSecondaryColor = Color::White;
+		//		point->BackHatchStyle = ChartHatchStyle::Percent25;
+		//		point->BorderWidth = 2;
+		//	}
+		//}
+		//catch(Exception^ ) {
+		//}
 	}
 public:
 	void DisplayData(DataTable^ table)	{
@@ -680,8 +670,8 @@ public:
 			this->PrintPlease->Enabled = true;
 			this->Update->Enabled = true;
 
-			for(int k=0; k<=12; k++)
-				this->dataViewer->Columns[k]->HeaderCell->Value = this->ComboBoxField->Items[k];
+//			for(int k=0; k<this->dataViewer->Columns->Count; k++)
+//				this->dataViewer->Columns[k]->HeaderCell->Value = this->ComboBoxField->Items[k];
 		}
 		else {
 			this->Update->Enabled = false;

@@ -5,7 +5,7 @@ using namespace System;
 using namespace System::Data;
 using namespace System::Data::OleDb;
 using namespace System::Collections;
-//using namespace System::Windows::Forms;
+using namespace System::Windows::Forms;
 using namespace System::Xml;
 
 public ref class Caccdb :
@@ -28,13 +28,17 @@ public:
 	int DatabaseUpdate(String^ cmd);
 	void DatabaseTableInsert(String^ tblName, String^ lst);
 	DataTable^ DatabaseQuery(String^ query);
-	DataTable^ DatabaseTest(String^ tblName, int);
+	DataTable^ DatabaseTest(int);
+	DataTable^ DatabaseFindInTable(String^ tblName, int RNo);
 	DataTable^ DatabaseTableFieldValue(String^ tblName, String^ fldName, String^ value);
 	DataTable^ DatabaseTableQuery(String^ tblName, String^ cdnName);
 
-	DataTable^ DatabaseTableNames(String^ tblName, String^ name, String^ fname);
-	DataTable^ DatabaseMultipleNames(String^ Name, int total);
+	DataTable^ DatabaseTableNames(Student^ student);//String^ tblName, String^ name, String^ fname);
+	DataTable^ DatabaseTableNamesTable(DataTable^ table, String^ fldName, String^ value);
+	DataTable^ DatabaseTableNamesEtc(Student^ student, String^ caste, String^ village);
+	DataTable^ DatabaseMultipleRecords(String^ tblName, String^ fldName, int total);
 	DataTable^ DatabaseMultipleEntries(String^ tblName, String^ group);
+	int DatabaseTableDelete(String^ tblName, String^ cdnName);
 };
 
 }

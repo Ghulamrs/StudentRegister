@@ -626,7 +626,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=iif((Fields!Passed.Value)="True", "پاس", "-")</Value>
+                              <Value>=iif((Fields!Passed.Value)=1, "پاس", "-")</Value>
                               <Style>
                                 <FontFamily>Alvi Nastaleeq</FontFamily>
                                 <FontSize>16pt</FontSize>
@@ -652,6 +652,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1062,7 +1063,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>

@@ -26,7 +26,7 @@ StudentData::StudentData(void)
 
 StudentData::StudentData(int sr, 
 	String^ name, String^ father, String^ cat, String^ occ, String^ add, 
-	DateTime^ da, DateTime^ db, DateTime^ de, int c1, int c2, int ss, bool ps)
+	DateTime^ da, DateTime^ db, DateTime^ de, int c1, int c2, int ss, int ps)
 {
 	Sro = sr;
 

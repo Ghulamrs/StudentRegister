@@ -17,13 +17,13 @@ public ref class StudentData
 		int       class1;
 		int       class2;
 		int       session;
-		bool      passed;
+		int       passed;
 
 public:
 	StudentData(void);
 	StudentData(int, 
 	String^, String^, String^, String^, String^, 
-	DateTime^, DateTime^, DateTime^, int, int, int, bool);
+	DateTime^, DateTime^, DateTime^, int, int, int, int);
 	property String^ Name {	
 		String^ get() { return name; }
 		void set(String^ _name) { name = _name; }
@@ -74,9 +74,9 @@ public:
 		int get() { return session; }
 		void set(int _number) { session = _number; }
 	}
-	property bool Passed {	
-		bool get() { return passed; }
-		void set(bool _boolean) { passed = _boolean; }
+	property int Passed {	
+		int get() { return passed; }
+		void set(int _boolean) { passed = _boolean; }
 	}
 };
 

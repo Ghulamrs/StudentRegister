@@ -76,16 +76,10 @@
     <ClInclude Include="MainForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Form2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Display.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Caccdb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Promotion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="XmlData.h">
@@ -119,13 +113,7 @@
     <EmbeddedResource Include="MainForm.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
     <EmbeddedResource Include="Display.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Promotion.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

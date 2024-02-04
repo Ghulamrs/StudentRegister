@@ -12,8 +12,6 @@
 #include "XmlData.h"
 #include "Caccdb.h"
 #include "Form1.h"
-#include "Promotion.h"
-#include "Form2.h"
 #include "MainForm.h"
 
 using namespace SRegister;

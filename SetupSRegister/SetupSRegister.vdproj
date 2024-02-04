@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0E995DCE4284435D9A1250528C09C30E"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_169B6D88939F4E0997A825B885B37716"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -51,12 +45,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_259D16C6EA8943C89188B6EF2ABABDF6"
-        "OwnerKey" = "8:_F27F5F5870584CCBB156E7F592214352"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_2C90C1058BD7FD57D8103A5DA6A0DFBF"
         "OwnerKey" = "8:_F27F5F5870584CCBB156E7F592214352"
         "MsmSig" = "8:_UNDEFINED"
@@ -81,12 +69,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_34793CF1BA724D1ABB3CA2E43E9F26CF"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_36531378D2CF46EE88412207AE1BFF2B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -95,6 +77,12 @@
         {
         "MsmKey" = "8:_3B81A6B129AD4F66982FAEA2B61D4384"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_412619AD650043B888634FA3C8810663"
+        "OwnerKey" = "8:_F27F5F5870584CCBB156E7F592214352"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -123,7 +111,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4DFBE777E9C346A38C576DB09F021427"
+        "MsmKey" = "8:_4CC2C5F18C0A4752AAA53E044F9C9C39"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -165,6 +153,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_74D95276B6C0840BE9E8A42C6DB32A9F"
+        "OwnerKey" = "8:_F27F5F5870584CCBB156E7F592214352"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7D9E0E563034403B9A2D29A25ED97F41"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_949F11FE3B734322845F59CBDA4AC681"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -184,12 +184,6 @@
         "Entry"
         {
         "MsmKey" = "8:_9D8FDD64805F4D428A99FD86F1E4B77E"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_AFB655AFEBF64EA6B376B0020289F505"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -225,7 +219,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_BA23CA2E5F7E414DA60DD3C4FDE2EBE5"
+        "MsmKey" = "8:_C2914F427C7C49DA9496B3E36A155980"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -237,19 +231,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C5A4C93131C145FD9C1E062B3428924D"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_CA79C9D2BA434D0AA1B0528CA10EAEBF"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_E2C597A9597A442CB24B423BD27381FC"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -273,6 +255,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_F2EF6D52F19942498D9074551F740E34"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_F27F5F5870584CCBB156E7F592214352"
         "MsmSig" = "8:_UNDEFINED"
@@ -287,6 +275,18 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_2C90C1058BD7FD57D8103A5DA6A0DFBF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F2EF6D52F19942498D9074551F740E34"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_74D95276B6C0840BE9E8A42C6DB32A9F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -421,26 +421,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0E995DCE4284435D9A1250528C09C30E"
-            {
-            "SourcePath" = "8:default.accdb"
-            "TargetName" = "8:default.accdb"
-            "Tag" = "8:"
-            "Folder" = "8:_B21A9119BCC14A4780D01798410B985E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_169B6D88939F4E0997A825B885B37716"
             {
             "SourcePath" = "8:..\\SRegister\\ReadMe.txt"
@@ -603,26 +583,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_34793CF1BA724D1ABB3CA2E43E9F26CF"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\CRULP_Urdu_Phonetic_kb_v1.1\\wow64\\CRULPKB.dll"
-            "TargetName" = "8:CRULPKB.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_376D7230B6B44523B29FE469FC26EE65"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_36531378D2CF46EE88412207AE1BFF2B"
             {
             "SourcePath" = "8:Urdu Keyboard.png"
@@ -743,10 +703,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4DFBE777E9C346A38C576DB09F021427"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4CC2C5F18C0A4752AAA53E044F9C9C39"
             {
-            "SourcePath" = "8:high.accdb"
-            "TargetName" = "8:high.accdb"
+            "SourcePath" = "8:..\\SRegister\\database\\high1988-1999.accdb"
+            "TargetName" = "8:high1988-1999.accdb"
             "Tag" = "8:"
             "Folder" = "8:_18B2F2B2F46943568F5BAD066A9F43CA"
             "Condition" = "8:"
@@ -883,6 +843,57 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_74D95276B6C0840BE9E8A42C6DB32A9F"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ARegister, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_74D95276B6C0840BE9E8A42C6DB32A9F"
+                    {
+                    "Name" = "8:ARegister.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ARegister.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C40D1951BCDA469F88695106B9FA56CC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7D9E0E563034403B9A2D29A25ED97F41"
+            {
+            "SourcePath" = "8:..\\SRegister\\database\\primary1937-2000.accdb"
+            "TargetName" = "8:primary1937-2000.accdb"
+            "Tag" = "8:"
+            "Folder" = "8:_18B2F2B2F46943568F5BAD066A9F43CA"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_949F11FE3B734322845F59CBDA4AC681"
             {
             "SourcePath" = "8:Operation Instructions.docx"
@@ -960,26 +971,6 @@
             "TargetName" = "8:alpha_urdu.exe"
             "Tag" = "8:"
             "Folder" = "8:_C40D1951BCDA469F88695106B9FA56CC"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AFB655AFEBF64EA6B376B0020289F505"
-            {
-            "SourcePath" = "8:primary.accdb"
-            "TargetName" = "8:primary.accdb"
-            "Tag" = "8:"
-            "Folder" = "8:_18B2F2B2F46943568F5BAD066A9F43CA"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1085,10 +1076,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BA23CA2E5F7E414DA60DD3C4FDE2EBE5"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C2914F427C7C49DA9496B3E36A155980"
             {
-            "SourcePath" = "8:middle.accdb"
-            "TargetName" = "8:middle.accdb"
+            "SourcePath" = "8:..\\SRegister\\database\\middle1972-1995.accdb"
+            "TargetName" = "8:middle1972-1995.accdb"
             "Tag" = "8:"
             "Folder" = "8:_18B2F2B2F46943568F5BAD066A9F43CA"
             "Condition" = "8:"
@@ -1125,52 +1116,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5A4C93131C145FD9C1E062B3428924D"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\CRULP_Urdu_Phonetic_kb_v1.1\\ia64\\CRULPKB.dll"
-            "TargetName" = "8:CRULPKB.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_2D966BBAB61441408BF585E7B34C072A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CA79C9D2BA434D0AA1B0528CA10EAEBF"
             {
             "SourcePath" = "8:..\\..\\..\\..\\..\\اُردو Fonts\\Nafees Nastaleeq v1.02.ttf"
             "TargetName" = "8:Nafees Nastaleeq v1.02.ttf"
             "Tag" = "8:"
             "Folder" = "8:_E313072408E448D2819E287A37D283A0"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E2C597A9597A442CB24B423BD27381FC"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\CRULP_Urdu_Phonetic_kb_v1.1\\amd64\\CRULPKB.dll"
-            "TargetName" = "8:CRULPKB.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AA8FDF4C960F4630996F643948DC24B5"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1314,39 +1265,6 @@
                             "Property" = "8:_759A9EB0D37A4BD8AE15CFE640CAB5B9"
                                 "Folders"
                                 {
-                                    "{9EF0B969-E518-4E46-987F-47570745A589}:_2D966BBAB61441408BF585E7B34C072A"
-                                    {
-                                    "Name" = "8:ia64"
-                                    "AlwaysCreate" = "11:FALSE"
-                                    "Condition" = "8:"
-                                    "Transitive" = "11:FALSE"
-                                    "Property" = "8:_E1EBCC083C2C4F009B8158D2955EBDE6"
-                                        "Folders"
-                                        {
-                                        }
-                                    }
-                                    "{9EF0B969-E518-4E46-987F-47570745A589}:_376D7230B6B44523B29FE469FC26EE65"
-                                    {
-                                    "Name" = "8:wow64"
-                                    "AlwaysCreate" = "11:FALSE"
-                                    "Condition" = "8:"
-                                    "Transitive" = "11:FALSE"
-                                    "Property" = "8:_AA1CAC9794A04904BD84A07383FDA3C7"
-                                        "Folders"
-                                        {
-                                        }
-                                    }
-                                    "{9EF0B969-E518-4E46-987F-47570745A589}:_AA8FDF4C960F4630996F643948DC24B5"
-                                    {
-                                    "Name" = "8:amd64"
-                                    "AlwaysCreate" = "11:FALSE"
-                                    "Condition" = "8:"
-                                    "Transitive" = "11:FALSE"
-                                    "Property" = "8:_CE4D741DC91E493984C6FABD3CEFB8C1"
-                                        "Folders"
-                                        {
-                                        }
-                                    }
                                     "{9EF0B969-E518-4E46-987F-47570745A589}:_CDE088A64687498693EE36E4076B95A1"
                                     {
                                     "Name" = "8:i386"
@@ -1392,7 +1310,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SRegister"
         "ProductCode" = "8:{127BC2F6-326F-4C16-A5AD-8142EE1F90CC}"
-        "PackageCode" = "8:{C64A582F-6927-478C-83D3-83AC1A79D24C}"
+        "PackageCode" = "8:{F31D9BF4-2D61-4BF7-9772-824DA103AEF0}"
         "UpgradeCode" = "8:{5AC81724-F064-4997-96CE-C5E80D1775E3}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1952,7 +1870,7 @@
         }
         "MergeModule"
         {
-            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_259D16C6EA8943C89188B6EF2ABABDF6"
+            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_412619AD650043B888634FA3C8810663"
             {
             "UseDynamicProperties" = "11:TRUE"
             "IsDependency" = "11:TRUE"
@@ -1992,6 +1910,34 @@
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{89540859-B3DA-4C5C-96F3-01A861245C34}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F2EF6D52F19942498D9074551F740E34"
+            {
+            "SourcePath" = "8:..\\ARegister\\obj\\Release\\ARegister.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B21A9119BCC14A4780D01798410B985E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{D1C9F6FC-2870-4612-AECA-0BEE1D04B2C9}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {
