@@ -145,16 +145,16 @@ namespace SRegister {
 			this->userFile = (gcnew System::Windows::Forms::Label());
 			this->Breakup = (gcnew System::Windows::Forms::Button());
 			this->PrintColorDialog = (gcnew System::Windows::Forms::ColorDialog());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->dataViewer))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataViewer))->BeginInit();
 			this->groupBox1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->chart1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// Clos
 			// 
-			this->Clos->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->Clos->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Clos->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)), 
+			this->Clos->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->Clos->Location = System::Drawing::Point(728, 500);
 			this->Clos->Margin = System::Windows::Forms::Padding(4, 7, 4, 7);
@@ -167,19 +167,19 @@ namespace SRegister {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)), 
+			this->label1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label1->Location = System::Drawing::Point(183, 15);
 			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(85, 58);
+			this->label1->Size = System::Drawing::Size(45, 30);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"مثالیں";
 			// 
 			// Find
 			// 
 			this->Find->Enabled = false;
-			this->Find->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->Find->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Find->ForeColor = System::Drawing::Color::Green;
 			this->Find->Location = System::Drawing::Point(17, 500);
@@ -193,12 +193,12 @@ namespace SRegister {
 			// ComboBoxField
 			// 
 			this->ComboBoxField->DrawMode = System::Windows::Forms::DrawMode::OwnerDrawVariable;
-			this->ComboBoxField->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->ComboBoxField->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->ComboBoxField->FormattingEnabled = true;
 			this->ComboBoxField->Location = System::Drawing::Point(52, 11);
 			this->ComboBoxField->Name = L"ComboBoxField";
-			this->ComboBoxField->Size = System::Drawing::Size(115, 66);
+			this->ComboBoxField->Size = System::Drawing::Size(115, 38);
 			this->ComboBoxField->TabIndex = 4;
 			this->ComboBoxField->DrawItem += gcnew System::Windows::Forms::DrawItemEventHandler(this, &AddItem::ComboBoxField_DrawItem);
 			this->ComboBoxField->SelectedIndexChanged += gcnew System::EventHandler(this, &AddItem::ComboBoxField_SelectedIndexChanged);
@@ -207,12 +207,12 @@ namespace SRegister {
 			// 
 			this->dataViewer->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataViewer->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->dataViewer->Location = System::Drawing::Point(3, 61);
+			this->dataViewer->Location = System::Drawing::Point(3, 32);
 			this->dataViewer->MultiSelect = false;
 			this->dataViewer->Name = L"dataViewer";
 			this->dataViewer->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->dataViewer->RowTemplate->Height = 33;
-			this->dataViewer->Size = System::Drawing::Size(838, 367);
+			this->dataViewer->Size = System::Drawing::Size(838, 396);
 			this->dataViewer->TabIndex = 5;
 			this->dataViewer->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &AddItem::dataViewer_CellContentClick);
 			this->dataViewer->CellMouseLeave += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &AddItem::dataViewer_CellMouseLeave);
@@ -220,12 +220,12 @@ namespace SRegister {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)), 
+			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label2->Location = System::Drawing::Point(17, 15);
 			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(59, 58);
+			this->label2->Size = System::Drawing::Size(30, 30);
 			this->label2->TabIndex = 6;
 			this->label2->Text = L"کلیہ";
 			// 
@@ -249,35 +249,35 @@ namespace SRegister {
 			chartArea1->Name = L"ChartArea1";
 			this->chart1->ChartAreas->Add(chartArea1);
 			this->chart1->Dock = System::Windows::Forms::DockStyle::Fill;
-			legend1->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			legend1->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			legend1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)), 
+			legend1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			legend1->IsTextAutoFit = false;
 			legend1->Name = L"Legend1";
 			this->chart1->Legends->Add(legend1);
-			this->chart1->Location = System::Drawing::Point(3, 61);
+			this->chart1->Location = System::Drawing::Point(3, 32);
 			this->chart1->Name = L"chart1";
 			series1->ChartArea = L"ChartArea1";
 			series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Pie;
-			series1->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			series1->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			series1->LabelForeColor = System::Drawing::SystemColors::ControlText;
 			series1->Legend = L"Legend1";
 			series1->Name = L"Series1";
 			series2->ChartArea = L"ChartArea1";
 			series2->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Pie;
-			series2->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			series2->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			series2->LabelForeColor = System::Drawing::SystemColors::ControlText;
 			series2->Legend = L"Legend1";
 			series2->Name = L"Series2";
 			this->chart1->Series->Add(series1);
 			this->chart1->Series->Add(series2);
-			this->chart1->Size = System::Drawing::Size(838, 367);
+			this->chart1->Size = System::Drawing::Size(838, 396);
 			this->chart1->TabIndex = 63;
 			this->chart1->Text = L"chart1";
-			title1->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			title1->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			title1->ForeColor = System::Drawing::Color::Green;
 			title1->Name = L"Title1";
@@ -287,25 +287,25 @@ namespace SRegister {
 			// 
 			// dateTimePicker
 			// 
-			this->dateTimePicker->CalendarFont = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, 
+			this->dateTimePicker->CalendarFont = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->dateTimePicker->CalendarForeColor = System::Drawing::Color::Cyan;
 			this->dateTimePicker->CalendarTitleBackColor = System::Drawing::SystemColors::ControlText;
 			this->dateTimePicker->CalendarTrailingForeColor = System::Drawing::SystemColors::ControlText;
 			this->dateTimePicker->CustomFormat = L"dd/MM/yyyy";
-			this->dateTimePicker->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->dateTimePicker->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->dateTimePicker->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
 			this->dateTimePicker->Location = System::Drawing::Point(255, 188);
 			this->dateTimePicker->Name = L"dateTimePicker";
-			this->dateTimePicker->Size = System::Drawing::Size(200, 67);
+			this->dateTimePicker->Size = System::Drawing::Size(200, 37);
 			this->dateTimePicker->TabIndex = 62;
 			this->dateTimePicker->Visible = false;
 			// 
 			// Update
 			// 
 			this->Update->Enabled = false;
-			this->Update->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->Update->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Update->ForeColor = System::Drawing::Color::Red;
 			this->Update->Location = System::Drawing::Point(144, 500);
@@ -320,25 +320,25 @@ namespace SRegister {
 			// 
 			this->comboBoxWord->DrawMode = System::Windows::Forms::DrawMode::OwnerDrawVariable;
 			this->comboBoxWord->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
-			this->comboBoxWord->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->comboBoxWord->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->comboBoxWord->FormattingEnabled = true;
 			this->comboBoxWord->Location = System::Drawing::Point(244, 11);
 			this->comboBoxWord->Name = L"comboBoxWord";
-			this->comboBoxWord->Size = System::Drawing::Size(222, 66);
+			this->comboBoxWord->Size = System::Drawing::Size(222, 38);
 			this->comboBoxWord->TabIndex = 58;
 			this->comboBoxWord->DrawItem += gcnew System::Windows::Forms::DrawItemEventHandler(this, &AddItem::ComboBoxField_DrawItem);
 			this->comboBoxWord->SelectedIndexChanged += gcnew System::EventHandler(this, &AddItem::comboBoxWord_SelectedIndexChanged);
 			// 
 			// textBox
 			// 
-			this->textBox->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->textBox->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox->Location = System::Drawing::Point(519, 12);
 			this->textBox->Margin = System::Windows::Forms::Padding(2);
 			this->textBox->Name = L"textBox";
 			this->textBox->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->textBox->Size = System::Drawing::Size(210, 67);
+			this->textBox->Size = System::Drawing::Size(210, 37);
 			this->textBox->TabIndex = 59;
 			this->textBox->Enter += gcnew System::EventHandler(this, &AddItem::textBox_Enter);
 			this->textBox->Leave += gcnew System::EventHandler(this, &AddItem::textBox_Leave);
@@ -346,19 +346,19 @@ namespace SRegister {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)), 
+			this->label4->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label4->Location = System::Drawing::Point(487, 15);
 			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(55, 58);
+			this->label4->Size = System::Drawing::Size(28, 30);
 			this->label4->TabIndex = 60;
 			this->label4->Text = L"لفظ";
 			// 
 			// PrintPlease
 			// 
 			this->PrintPlease->Enabled = false;
-			this->PrintPlease->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->PrintPlease->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->PrintPlease->ForeColor = System::Drawing::Color::Red;
 			this->PrintPlease->Location = System::Drawing::Point(595, 500);
@@ -377,7 +377,7 @@ namespace SRegister {
 			this->dateTimePickerInCombo->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
 			this->dateTimePickerInCombo->Location = System::Drawing::Point(277, 509);
 			this->dateTimePickerInCombo->Name = L"dateTimePickerInCombo";
-			this->dateTimePickerInCombo->Size = System::Drawing::Size(200, 65);
+			this->dateTimePickerInCombo->Size = System::Drawing::Size(200, 36);
 			this->dateTimePickerInCombo->TabIndex = 62;
 			this->dateTimePickerInCombo->Visible = false;
 			this->dateTimePickerInCombo->MouseEnter += gcnew System::EventHandler(this, &AddItem::dateTimePickerInCombo_MouseEnter);
@@ -387,17 +387,16 @@ namespace SRegister {
 			// 
 			this->userFile->AutoSize = true;
 			this->userFile->Enabled = false;
-			this->userFile->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->userFile->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->userFile->Location = System::Drawing::Point(776, 17);
 			this->userFile->Name = L"userFile";
-			this->userFile->Size = System::Drawing::Size(0, 50);
+			this->userFile->Size = System::Drawing::Size(0, 25);
 			this->userFile->TabIndex = 63;
 			// 
 			// Breakup
 			// 
-			this->Breakup->Enabled = false;
-			this->Breakup->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->Breakup->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.94764F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Breakup->ForeColor = System::Drawing::Color::Red;
 			this->Breakup->Location = System::Drawing::Point(378, 500);
@@ -410,7 +409,7 @@ namespace SRegister {
 			// 
 			// AddItem
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(15, 58);
+			this->AutoScaleDimensions = System::Drawing::SizeF(7, 28);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(868, 563);
 			this->Controls->Add(this->Breakup);
@@ -427,7 +426,7 @@ namespace SRegister {
 			this->Controls->Add(this->Find);
 			this->Controls->Add(this->Clos);
 			this->Controls->Add(this->groupBox1);
-			this->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->Font = (gcnew System::Drawing::Font(L"Alvi Nastaleeq", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedDialog;
 			this->Margin = System::Windows::Forms::Padding(4, 7, 4, 7);
@@ -438,9 +437,9 @@ namespace SRegister {
 			this->SizeGripStyle = System::Windows::Forms::SizeGripStyle::Hide;
 			this->Text = L" ریکارڈز ڈھونڈیں";
 			this->TopMost = true;
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->dataViewer))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataViewer))->EndInit();
 			this->groupBox1->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->chart1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -486,7 +485,7 @@ public:
 
 private: System::Void ComboBoxField_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 		textBox->Enabled = true;
-		Breakup->Enabled = false;
+		//Breakup->Enabled = false;
 		comboBoxWord->Enabled = true;
 
 		if(ComboBoxField->SelectedIndex==3) comboBoxWord->DataSource = m_lists[ComboBoxField->SelectedIndex+8];
@@ -602,48 +601,48 @@ private: System::Void ComboBoxField_DrawItem(System::Object^  sender, System::Wi
 		e->DrawFocusRectangle();
 	}
 private: System::Void chart1_MouseDown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-		//HitTestResult^ result = chart1->HitTest(e->X, e->Y);
-		//try {
-		//	bool exploded = (chart1->Series[0]->Points[result->PointIndex]->CustomProperties == "Exploded=true") ? true : false;
+		HitTestResult^ result = chart1->HitTest(e->X, e->Y);
+		try {
+			bool exploded = (chart1->Series[0]->Points[result->PointIndex]->CustomProperties == "Exploded=true") ? true : false;
 
-		//	for each(DataPoint^ point in chart1->Series[0]->Points) {
-		//		point->CustomProperties = "";
-		//	}
+			for each(DataPoint^ point in chart1->Series[0]->Points) {
+				point->CustomProperties = "";
+			}
 
-		//	if(exploded) return;
-		//	if( result->ChartElementType == ChartElementType::DataPoint) {
-		//		DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
-		//		point->CustomProperties = "Exploded = true";
-		//	}
+			if(exploded) return;
+			if( result->ChartElementType == ChartElementType::DataPoint) {
+				DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
+				point->CustomProperties = "Exploded = true";
+			}
 
-		//	if( result->ChartElementType == ChartElementType::LegendItem) {
-		//		DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
-		//		point->CustomProperties = "Exploded = true";
-		//	}
-		//}
-		//catch(Exception^ ) {
-		//}
+			if( result->ChartElementType == ChartElementType::LegendItem) {
+				DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
+				point->CustomProperties = "Exploded = true";
+			}
+		}
+		catch(Exception^ ) {
+		}
 	}
 private: System::Void chart1_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-		//HitTestResult^ result = chart1->HitTest(e->X, e->Y);
-		//try {
-		//	for each(DataPoint^ point in chart1->Series[0]->Points) {
-		//		point->BackSecondaryColor = Color::Black;
-		//		point->BackHatchStyle = ChartHatchStyle::None;
-		//		point->BorderWidth = 1;
-		//	}
-  //  
-		//	if( result->ChartElementType == ChartElementType::DataPoint ||
-		//		result->ChartElementType == ChartElementType::LegendItem) {                
+		HitTestResult^ result = chart1->HitTest(e->X, e->Y);
+		try {
+			for each(DataPoint^ point in chart1->Series[0]->Points) {
+				point->BackSecondaryColor = Color::Black;
+				point->BackHatchStyle = ChartHatchStyle::None;
+				point->BorderWidth = 1;
+			}
+    
+			if( result->ChartElementType == ChartElementType::DataPoint ||
+				result->ChartElementType == ChartElementType::LegendItem) {                
 
-		//		DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
-		//		point->BackSecondaryColor = Color::White;
-		//		point->BackHatchStyle = ChartHatchStyle::Percent25;
-		//		point->BorderWidth = 2;
-		//	}
-		//}
-		//catch(Exception^ ) {
-		//}
+				DataPoint^ point = chart1->Series[0]->Points[result->PointIndex];
+				point->BackSecondaryColor = Color::White;
+				point->BackHatchStyle = ChartHatchStyle::Percent25;
+				point->BorderWidth = 2;
+			}
+		}
+		catch(Exception^ ) {
+		}
 	}
 public:
 	void DisplayData(DataTable^ table)	{
