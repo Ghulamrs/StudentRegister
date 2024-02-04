@@ -53,6 +53,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsManaged>true</CompileAsManaged>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -100,6 +101,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Caccdb.cpp" />
+    <ClCompile Include="DbOffer.cpp" />
     <ClCompile Include="SRegister.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -113,6 +115,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Caccdb.h" />
+    <ClInclude Include="DbOffer.h" />
     <ClInclude Include="Display.h">
       <FileType>CppForm</FileType>
     </ClInclude>

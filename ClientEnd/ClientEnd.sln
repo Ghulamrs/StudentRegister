@@ -1,8 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerEnd", "ServerEnd\ServerEnd.vcxproj", "{6CFF032E-1F1B-45BD-BA96-0C000296E55B}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientEnd", "ClientEnd\ClientEnd.vcxproj", "{828B7666-6122-42CB-A397-5201EB3C0D4A}"
 EndProject
 Global
@@ -11,10 +11,6 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6CFF032E-1F1B-45BD-BA96-0C000296E55B}.Debug|Win32.ActiveCfg = Debug|Win32
-		{6CFF032E-1F1B-45BD-BA96-0C000296E55B}.Debug|Win32.Build.0 = Debug|Win32
-		{6CFF032E-1F1B-45BD-BA96-0C000296E55B}.Release|Win32.ActiveCfg = Release|Win32
-		{6CFF032E-1F1B-45BD-BA96-0C000296E55B}.Release|Win32.Build.0 = Release|Win32
 		{828B7666-6122-42CB-A397-5201EB3C0D4A}.Debug|Win32.ActiveCfg = Debug|Win32
 		{828B7666-6122-42CB-A397-5201EB3C0D4A}.Debug|Win32.Build.0 = Debug|Win32
 		{828B7666-6122-42CB-A397-5201EB3C0D4A}.Release|Win32.ActiveCfg = Release|Win32

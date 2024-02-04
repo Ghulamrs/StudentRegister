@@ -11,6 +11,7 @@
 
 #include "XmlData.h"
 #include "Caccdb.h"
+#include "DbOffer.h"
 #include "Form1.h"
 #include "MainForm.h"
 
