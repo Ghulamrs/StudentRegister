@@ -664,7 +664,9 @@ private: System::Void MainForm_FormClosing(System::Object^  sender, System::Wind
 						if(accdb->connectionOk) { 
 							Caccdb^ refdb = gcnew Caccdb(EnvDir, database);
 							if(refdb->connectionOk) { 
-								if( refdb->Count < accdb->Count) {
+								System::DateTime curTime = File::GetLastWriteTime(CurDir + databaseFilename);
+								System::DateTime envTime = File::GetLastWriteTime(EnvDir + databaseFilename);
+								if( curTime > envTime ) {
 									File::Copy(EnvDir + databaseFilename, EnvDir + databaseFilename->Replace(L"accdb", L"accbk"), true);
 									File::Copy(CurDir + databaseFilename, EnvDir + databaseFilename, true);
 								}
@@ -674,8 +676,8 @@ private: System::Void MainForm_FormClosing(System::Object^  sender, System::Wind
 				}
 			}
 		}
-		catch(Exception^ ) {
-			//MessageBox::Show(e->Message, "Runtime exception !!!");
+		catch(Exception^ ex) {
+			MessageBox::Show(ex->Message, "Backup failed !!!");
 		}
 	}
 public:
