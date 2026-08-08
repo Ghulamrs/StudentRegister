@@ -647,6 +647,44 @@ public:
 		لفظ->Close();
 	}
 
+private: String^ CsvValue(Object^ v) {
+		if(v == nullptr || v == System::DBNull::Value) return L"";
+		if(v->GetType() == System::DateTime::typeid)
+			return safe_cast<System::DateTime>(v).ToString(L"yyyy-MM-dd", System::Globalization::CultureInfo::InvariantCulture);
+		return Convert::ToString(v, System::Globalization::CultureInfo::InvariantCulture);
+	}
+
+private: String^ CsvField(String^ s) {
+		if(s == nullptr) return L"";
+		if(s->IndexOfAny(gcnew array<System::Char>(4){L',', L'"', L'\r', L'\n'}) < 0) return s;
+		return L"\"" + s->Replace(L"\"", L"\"\"") + L"\"";
+	}
+
+private: void ExportCsv(String^ dbPath, String^ database, String^ outDir) {
+		array<String^>^ tables = gcnew array<String^>(2){ L"طلبا", L"داخلہ" };
+		array<String^>^ names  = gcnew array<String^>(2){ L"students", L"admissions" };
+		for(int t=0; t<tables->Length; t++) {
+			Caccdb^ db = gcnew Caccdb(dbPath, database);
+			if(!db->connectionOk) continue;
+			DataTable^ table = db->DatabaseQuery(L"select * from " + tables[t] + L" order by نمبر");
+			if(table == nullptr) continue;
+			System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
+			for(int c=0; c<table->Columns->Count; c++) {
+				if(c) sb->Append(L",");
+				sb->Append(CsvField(table->Columns[c]->ColumnName));
+			}
+			sb->Append(L"\r\n");
+			for(int r=0; r<table->Rows->Count; r++) {
+				for(int c=0; c<table->Columns->Count; c++) {
+					if(c) sb->Append(L",");
+					sb->Append(CsvField(CsvValue(table->Rows[r][c])));
+				}
+				sb->Append(L"\r\n");
+			}
+			File::WriteAllText(outDir + database + L"-" + names[t] + L".csv", sb->ToString(), gcnew System::Text::UTF8Encoding(true));
+		}
+	}
+
 private: System::Void MainForm_FormClosing(System::Object^  sender, System::Windows::Forms::FormClosingEventArgs^  e) {
 		try {
 			String^ CurDir = Environment::CurrentDirectory + L"\\Database\\";
@@ -657,6 +695,7 @@ private: System::Void MainForm_FormClosing(System::Object^  sender, System::Wind
 			for(int i=0; i<3; i++) {
 				String^ database = lists[3][i]->ToString();
 				databaseFilename = database + L".accdb";
+				if(File::Exists(CurDir + databaseFilename)) ExportCsv(CurDir, database, CurDir);
 				if(Directory::Exists(EnvDir) && File::Exists(CurDir + databaseFilename)) {
 					if(!File::Exists(EnvDir + databaseFilename)) File::Copy(CurDir + databaseFilename, EnvDir + databaseFilename, true);
 					else {
