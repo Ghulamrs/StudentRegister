@@ -667,8 +667,14 @@ private: System::Void MainForm_FormClosing(System::Object^  sender, System::Wind
 								System::DateTime curTime = File::GetLastWriteTime(CurDir + databaseFilename);
 								System::DateTime envTime = File::GetLastWriteTime(EnvDir + databaseFilename);
 								if( curTime > envTime ) {
-									File::Copy(EnvDir + databaseFilename, EnvDir + databaseFilename->Replace(L"accdb", L"accbk"), true);
+									String^ bkName = database + L"_" + System::DateTime::Now.ToString(L"yyyyMMdd") + L".accbk";
+									if(!File::Exists(EnvDir + bkName)) File::Copy(EnvDir + databaseFilename, EnvDir + bkName, false);
 									File::Copy(CurDir + databaseFilename, EnvDir + databaseFilename, true);
+									array<String^>^ kept = Directory::GetFiles(EnvDir, database + L"_*.accbk");
+									if(kept->Length > 30) {
+										Array::Sort(kept);
+										for(int k=0; k<kept->Length-30; k++) File::Delete(kept[k]);
+									}
 								}
 							}
 						}
