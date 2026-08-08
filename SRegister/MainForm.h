@@ -660,7 +660,7 @@ private: String^ CsvField(String^ s) {
 		return L"\"" + s->Replace(L"\"", L"\"\"") + L"\"";
 	}
 
-private: void ExportCsv(String^ dbPath, String^ database, String^ outDir) {
+private: void ExportCsv(String^ dbPath, String^ database, String^ outDir, array<String^>^ redact) {
 		array<String^>^ tables = gcnew array<String^>(2){ L"طلبا", L"داخلہ" };
 		array<String^>^ names  = gcnew array<String^>(2){ L"students", L"admissions" };
 		for(int t=0; t<tables->Length; t++) {
@@ -668,16 +668,25 @@ private: void ExportCsv(String^ dbPath, String^ database, String^ outDir) {
 			if(!db->connectionOk) continue;
 			DataTable^ table = db->DatabaseQuery(L"select * from " + tables[t] + L" order by نمبر");
 			if(table == nullptr) continue;
-			System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
+			array<int>^ keep = gcnew array<int>(table->Columns->Count);
+			int n = 0;
 			for(int c=0; c<table->Columns->Count; c++) {
-				if(c) sb->Append(L",");
-				sb->Append(CsvField(table->Columns[c]->ColumnName));
+				bool drop = false;
+				if(redact != nullptr)
+					for(int j=0; j<redact->Length; j++)
+						if(table->Columns[c]->ColumnName == redact[j]) drop = true;
+				if(!drop) keep[n++] = c;
+			}
+			System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
+			for(int k=0; k<n; k++) {
+				if(k) sb->Append(L",");
+				sb->Append(CsvField(table->Columns[keep[k]]->ColumnName));
 			}
 			sb->Append(L"\r\n");
 			for(int r=0; r<table->Rows->Count; r++) {
-				for(int c=0; c<table->Columns->Count; c++) {
-					if(c) sb->Append(L",");
-					sb->Append(CsvField(CsvValue(table->Rows[r][c])));
+				for(int k=0; k<n; k++) {
+					if(k) sb->Append(L",");
+					sb->Append(CsvField(CsvValue(table->Rows[r][keep[k]])));
 				}
 				sb->Append(L"\r\n");
 			}
@@ -695,7 +704,12 @@ private: System::Void MainForm_FormClosing(System::Object^  sender, System::Wind
 			for(int i=0; i<3; i++) {
 				String^ database = lists[3][i]->ToString();
 				databaseFilename = database + L".accdb";
-				if(File::Exists(CurDir + databaseFilename)) ExportCsv(CurDir, database, CurDir);
+				if(File::Exists(CurDir + databaseFilename)) {
+					array<String^>^ redact = gcnew array<String^>(6){ L"نام", L"ولد", L"پتہ", L"پیدائش", L"ذات", L"پیشہ" };
+					ExportCsv(CurDir, database, CurDir, redact);
+					Directory::CreateDirectory(CurDir + L"export\\");
+					ExportCsv(CurDir, database, CurDir + L"export\\", nullptr);
+				}
 				if(Directory::Exists(EnvDir) && File::Exists(CurDir + databaseFilename)) {
 					if(!File::Exists(EnvDir + databaseFilename)) File::Copy(CurDir + databaseFilename, EnvDir + databaseFilename, true);
 					else {
