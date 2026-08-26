@@ -6,6 +6,7 @@ using namespace System::Data;
 using namespace System::Data::OleDb;
 using namespace System::Collections;
 using namespace System::Windows::Forms;
+using namespace System::IO;
 using namespace System::Xml;
 
 public ref class Caccdb :
@@ -13,7 +14,6 @@ public ref class Caccdb :
 {
 	OleDbConnection^ mcon;
 	OleDbDataAdapter^ moleAdapter;
-
 public:
 	Caccdb(void);
 	Caccdb(String^ tblName);
@@ -39,6 +39,7 @@ public:
 	DataTable^ DatabaseMultipleRecords(String^ tblName, String^ fldName, int total);
 	DataTable^ DatabaseMultipleEntries(String^ tblName, String^ group);
 	int DatabaseTableDelete(String^ tblName, String^ cdnName);
+	int DiscoverDatabase(String^ &file);
 };
 
 }
